@@ -155,13 +155,13 @@ cc.Class({//class是一个函数
             this.xSpeed=0;
             this.node.x=this.node.width/2-this.node.parent.width/2;
         }
-        if(this.node.y>(-this.node.height/2+this.node.parent.height/2)){//上边界
+        if(this.node.y>(-this.node.height/2+this.node.parent.height/4)){//上边界
             this.ySpeed=0;
-            this.node.y=-this.node.height/2+this.node.parent.height/2;
+            this.node.y=-this.node.height/2+this.node.parent.height/4;
         }
-        if(this.node.y<(this.node.height/2-this.node.parent.height/2)){//下边界
+        if(this.node.y<(this.node.height/2-this.node.parent.height/4)){//下边界
             this.ySpeed=0;
-            this.node.y=this.node.height/2-this.node.parent.height/2;
+            this.node.y=this.node.height/2-this.node.parent.height/4;
         }
         this.node.x+=this.xSpeed*dt;
         this.node.y+=this.ySpeed*dt;
