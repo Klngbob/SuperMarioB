@@ -90,10 +90,13 @@
     "_active": true,
     "_components": [
       {
-        "__id__": 48
+        "__id__": 49
       },
       {
-        "__id__": 49
+        "__id__": 50
+      },
+      {
+        "__id__": 51
       }
     ],
     "_prefab": null,
@@ -183,7 +186,7 @@
       "array": [
         0,
         0,
-        554.2562584220408,
+        461.59154021710583,
         0,
         0,
         0,
@@ -383,8 +386,8 @@
       "__type__": "TypedArray",
       "ctor": "Float64Array",
       "array": [
-        -204.776,
-        -43.835,
+        -233.823,
+        -29.228,
         0,
         0,
         0,
@@ -1114,8 +1117,8 @@
       "__type__": "TypedArray",
       "ctor": "Float64Array",
       "array": [
-        -480,
-        -320,
+        0,
+        0,
         0,
         0,
         0,
@@ -1179,8 +1182,8 @@
       "__type__": "TypedArray",
       "ctor": "Float64Array",
       "array": [
-        438.804,
-        283.186,
+        0,
+        0,
         0,
         0,
         0,
@@ -1244,7 +1247,7 @@
       "__id__": 25
     },
     "_enabled": true,
-    "pickRadius": 250,
+    "pickRadius": 35,
     "_id": "57eJClFktEmbxPS6J6xIaX"
   },
   {
@@ -1739,6 +1742,9 @@
     "_components": [
       {
         "__id__": 47
+      },
+      {
+        "__id__": 48
       }
     ],
     "_prefab": null,
@@ -2133,6 +2139,16 @@
     "_id": "286VGEbPlJiL7M9u+7Ov8Z"
   },
   {
+    "__type__": "53279fmvGtNJ5t31cp5O7GB",
+    "_name": "",
+    "_objFlags": 0,
+    "node": {
+      "__id__": 39
+    },
+    "_enabled": true,
+    "_id": "deR125yl5A045VYH3DBh8+"
+  },
+  {
     "__type__": "cc.Canvas",
     "_name": "",
     "_objFlags": 0,
@@ -2175,5 +2191,24 @@
     "_originalWidth": 0,
     "_originalHeight": 0,
     "_id": "29zXboiXFBKoIV4PQ2liTe"
+  },
+  {
+    "__type__": "7297diZlYRBj7Eb3DpPwrX9",
+    "_name": "",
+    "_objFlags": 0,
+    "node": {
+      "__id__": 2
+    },
+    "_enabled": true,
+    "bulletPrefab": {
+      "__uuid__": "5fee20a7-50e4-4063-b70c-f6cba92cd985"
+    },
+    "player": {
+      "__id__": 7
+    },
+    "littleMonster": {
+      "__id__": 39
+    },
+    "_id": "e4M7YTrctDB416u0Xo2C2O"
   }
 ]

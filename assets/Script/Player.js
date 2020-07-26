@@ -49,6 +49,10 @@ cc.Class({//class是一个函数
     onKeyDown(event){
         //set a flag when key pressed
         switch(event.keyCode){
+            case cc.macro.KEY.j:// 发射子弹
+                this.game.spawnNewBullet();
+                break;
+
             case cc.macro.KEY.a://前
                 this.accLeft=true;
                 break;
@@ -65,8 +69,9 @@ cc.Class({//class是一个函数
                 this.accDown=true;
                 break;
 
-            case cc.macro.KEY.space:
+            case cc.macro.KEY.k://跳跃
                 this.node.runAction(this.setJumpAction());
+                break;
         }
     },
 

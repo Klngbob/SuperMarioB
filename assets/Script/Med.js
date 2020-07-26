@@ -1,10 +1,3 @@
-// Learn cc.Class:
-//  - https://docs.cocos.com/creator/manual/en/scripting/class.html
-// Learn Attribute:
-//  - https://docs.cocos.com/creator/manual/en/scripting/reference/attributes.html
-// Learn life-cycle callbacks:
-//  - https://docs.cocos.com/creator/manual/en/scripting/life-cycle-callbacks.html
-
 cc.Class({
     extends: cc.Component,
 
@@ -19,6 +12,7 @@ cc.Class({
     },
 
     getPlayerDistance:function(){
+        //获取玩家与药水瓶距离
         var player=cc.find("Canvas/Player");
         var playerPos=player.getPosition();
         //console.log(this.node.x,this.node.y);
@@ -28,10 +22,11 @@ cc.Class({
     },
 
     onPicked:function(){
+        //收集到药水瓶加血
         var backnode=cc.find("Canvas/Player/HP");
         var hp=backnode.getComponent(cc.ProgressBar);
         //console.log(hp.progress);
-        hp.progress+=0.2;
+        hp.progress+=0.4;
         //console.log(hp.progress);
         this.node.destroy();
     },
@@ -42,7 +37,7 @@ cc.Class({
     update:function (dt) {
         if(this.getPlayerDistance()<this.pickRadius){
             //调用收集行为
-            console.log("yes");
+            console.log("yes! baozi zhen de niubi!");
             this.onPicked();
             return;
         }
