@@ -61,13 +61,13 @@ cc.Class({//class是一个函数
                 this.accRight=true;
                 break;
             
-            case cc.macro.KEY.w://上
-                this.accUp=true;
-                break;
+            // case cc.macro.KEY.w://上
+            //     this.accUp=true;
+            //     break;
             
-            case cc.macro.KEY.s://下
-                this.accDown=true;
-                break;
+            // case cc.macro.KEY.s://下
+            //     this.accDown=true;
+            //     break;
 
             case cc.macro.KEY.k://跳跃
                 this.node.runAction(this.setJumpAction());
@@ -87,14 +87,14 @@ cc.Class({//class是一个函数
                 this.xSpeed=0;
                 this.accRight=false;
                 break;
-            case cc.macro.KEY.w:
-                this.ySpeed=0;
-                this.accUp=false;
-                break;
-            case cc.macro.KEY.s:
-                this.ySpeed=0;
-                this.accDown=false;
-                break;
+            // case cc.macro.KEY.w:
+            //     this.ySpeed=0;
+            //     this.accUp=false;
+            //     break;
+            // case cc.macro.KEY.s:
+            //     this.ySpeed=0;
+            //     this.accDown=false;
+            //     break;
         }
     },
     // LIFE-CYCLE CALLBACKS:
@@ -136,11 +136,11 @@ cc.Class({//class是一个函数
             //this.xSpeed+=this.accel*dt;
             this.xSpeed+=this.accel;
         }
-        if(this.accUp){
-            this.ySpeed+=this.accel;
-        }else if(this.accDown){
-            this.ySpeed-=this.accel;
-        }
+        // if(this.accUp){
+        //     this.ySpeed+=this.accel;
+        // }else if(this.accDown){
+        //     this.ySpeed-=this.accel;
+        // }
 
         //限制主角的速度不能超过最大值
         if(Math.abs(this.xSpeed)>this.maxMoveSpeed){
@@ -152,10 +152,10 @@ cc.Class({//class是一个函数
             this.ySpeed = this.maxMoveSpeed * this.ySpeed / Math.abs(this.ySpeed);
         }
         //根据当前速度更新主角的位置
-        if(this.node.x>(-this.node.width/2+this.node.parent.width/2)){//游戏主角碰右壁
-            this.xSpeed=0;
-            this.node.x=-this.node.width/2+this.node.parent.width/2;
-        }
+        // if(this.node.x>(-this.node.width/2+this.node.parent.width/2)){//游戏主角碰右壁
+        //     this.xSpeed=0;
+        //     this.node.x=-this.node.width/2+this.node.parent.width/2;
+        // }
         if(this.node.x<(this.node.width/2-this.node.parent.width/2)){//游戏主角碰左壁
             this.xSpeed=0;
             this.node.x=this.node.width/2-this.node.parent.width/2;
@@ -169,6 +169,6 @@ cc.Class({//class是一个函数
             this.node.y=this.node.height/2-this.node.parent.height/4;
         }
         this.node.x+=this.xSpeed*dt;
-        this.node.y+=this.ySpeed*dt;
+        // this.node.y+=this.ySpeed*dt;
     },
 });

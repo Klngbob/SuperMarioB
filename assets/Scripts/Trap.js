@@ -2,7 +2,7 @@ cc.Class({
     extends: cc.Component,
 
     properties: {
-        //药水碰撞半径
+        // 障碍碰撞半径
         pickRadius:0,
     },
 
@@ -12,7 +12,6 @@ cc.Class({
     },
 
     getPlayerDistance:function(){
-        //获取玩家与药水瓶距离
         var player=cc.find("Canvas/Player");
         var playerPos=player.getPosition();
         //console.log(this.node.x,this.node.y);
@@ -22,13 +21,13 @@ cc.Class({
     },
 
     onPicked:function(){
-        //收集到药水瓶加血
+        var player=cc.find("Canvas/Player");
         var backnode=cc.find("Canvas/Player/HP");
         var hp=backnode.getComponent(cc.ProgressBar);
         //console.log(hp.progress);
-        hp.progress+=0.4;
+        hp.progress-=0.2;
         //console.log(hp.progress);
-        this.node.destroy();
+        player.x -= 150;
     },
     start () {
 
@@ -37,7 +36,7 @@ cc.Class({
     update:function (dt) {
         if(this.getPlayerDistance()<this.pickRadius){
             //调用收集行为
-            console.log("yes! baozi zhen de niubi!");
+            console.log("No！ You are hurt!");
             this.onPicked();
             return;
         }

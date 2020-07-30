@@ -12,7 +12,6 @@ cc.Class({
     },
 
     getPlayerDistance:function(){
-        //获取玩家与药水瓶距离
         var player=cc.find("Canvas/Player");
         var playerPos=player.getPosition();
         //console.log(this.node.x,this.node.y);
@@ -22,7 +21,6 @@ cc.Class({
     },
 
     onPicked:function(){
-        //收集到药水瓶加血
         var backnode=cc.find("Canvas/Player/HP");
         var hp=backnode.getComponent(cc.ProgressBar);
         //console.log(hp.progress);

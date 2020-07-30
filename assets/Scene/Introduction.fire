@@ -177,7 +177,7 @@
       "array": [
         0,
         0,
-        289.2958019915905,
+        461.3444762339527,
         0,
         0,
         0,
@@ -386,7 +386,7 @@
     "_contentSize": {
       "__type__": "cc.Size",
       "width": 735.82,
-      "height": 370.4
+      "height": 290.4
     },
     "_anchorPoint": {
       "__type__": "cc.Vec2",
@@ -436,8 +436,8 @@
       }
     ],
     "_useOriginalSize": false,
-    "_string": "A,D 左右移动 \n\nW,S上下移动\n\n\nSpace 跳跃\n\n\n支付宝转账：18707080464 获得终极密码",
-    "_N$string": "A,D 左右移动 \n\nW,S上下移动\n\n\nSpace 跳跃\n\n\n支付宝转账：18707080464 获得终极密码",
+    "_string": "A,D 左右移动 \n\nW,S上下移动\n\nJ攻击 K跳跃\n\n支付宝转账：18707080464 获得终极密码",
+    "_N$string": "A,D 左右移动 \n\nW,S上下移动\n\nJ攻击 K跳跃\n\n支付宝转账：18707080464 获得终极密码",
     "_fontSize": 40,
     "_lineHeight": 40,
     "_enableWrapText": true,
